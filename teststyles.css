@@ -1,0 +1,45 @@
+/* Bunny's She Codes Plus Portfolio Website */
+:root {
+  --headerheight: 10vh;
+  }
+
+*
+{
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+header {
+  width: 100vw;
+  height: var(--headerheight);
+  padding: 10px 8px;
+  /* background-image: url('./images/gray.jpg'); */
+  position: fixed;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+nav a
+{
+  white-space: nowrap;
+}
+
+nav#mainnav {
+    justify-content: space-between;
+}
+
+body {
+  margin: 0px;
+  min-height: 100vh;
+}
+
+section {
+  height: 100vh;
+  padding-top: var(--headerheight);
+  font-size: 18px;
+
+ }
+
