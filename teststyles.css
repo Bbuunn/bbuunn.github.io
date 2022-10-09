@@ -1,4 +1,10 @@
 /* Bunny's She Codes Plus Portfolio Website */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,600;0,700;1,700&display=swap');
+html {
+  font-family: 'Barlow', sans-serif;
+  /* background-color: #fff; */
+}
+
 :root {
   --headerheight: 10vh;
   }
@@ -12,23 +18,39 @@
 header {
   width: 100vw;
   height: var(--headerheight);
-  padding: 10px 8px;
-  /* background-image: url('./images/gray.jpg'); */
+  padding: 1rem 2rem;
   position: fixed;
+  background-color: white; opacity: 0.7;
+ 
+
+
+/*Center Nav elements Vertically*/
+  display: flex;
+  align-items: center;
+  /* Alignment Error occurred in result */
 }
 
 header nav {
   display: flex;
   flex-wrap: nowrap;
+  font-weight: 700;
+
 }
 
 nav a
 {
-  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1.3rem;
+  color: black;
+  padding: 0 1rem;
 }
 
 nav#mainnav {
-    justify-content: space-between;
+      justify-content:space-between;
+      font-weight:800;
+      flex-grow: 1;
+      padding: 0 5rem 0 0;
 }
 
 body {
@@ -38,8 +60,126 @@ body {
 
 section {
   height: 100vh;
-  padding-top: var(--headerheight);
-  font-size: 18px;
-
+  padding: var(--headerheight) 30px 10px 30px;
+  font-size: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+ 
  }
 
+ section#home{
+  background-image: url('./images/bunhori1.JPG');
+  background-size: cover;
+  justify-content: center;
+ }
+
+ section#about{
+  background-image: url('./images/bunhori3.jpg');
+  background-size: cover;
+ }
+
+ section#work{
+  background-image: url('./images/flower1.jpg');
+  background-size: cover;
+ }
+
+ section#contact{
+  background-image: url('./images/gray.jpg');
+  background-size: cover;
+ }
+
+ .section-title {
+font-weight: 500;
+font-size: 2rem;
+width: 40%; 
+}
+.section-contents {
+width: 80%;
+flex-grow: 1;
+}
+
+ form {
+  margin: 50px auto;
+  width: 90%;
+}
+
+.form-item {
+  display: flex table-row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.form-item input,
+.form-item textarea {
+  flex-basis: 50%;
+  border: 2px solid white;
+}
+ 
+.form-item input,
+.form-item textarea,
+.form-item button {
+  border: 2px solid black;
+  background-color: #FFF;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+form {
+  display: table;
+}
+label {
+  display: table-cell;
+}
+input {
+  display: table-cell;
+}
+/* 
+ form {
+  margin: 50px auto;
+  width: 90%;
+}
+
+.form-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.form-item label {
+  flex-basis: 150px;
+  font-size: 22px;
+}
+
+.form-item input,
+.form-item textarea {
+  flex-basis: 50%;
+  border: 2px solid #FDDC5C;
+}
+
+.form-item input:hover,
+.form-item textarea:hover {
+  border: 2px solid #FA4224;
+}
+
+.form-item input,
+.form-item textarea,
+.form-item button {
+  border: 2px solid #FDDC5C;
+  background-color: #FFF;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.form-item button:hover {
+  border: 2px solid #FA4224;
+  background-color: #FA4224;
+  color: #FFF;
+}
+
+.form-item button {
+  width: 100px;
+} */

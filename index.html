@@ -18,9 +18,32 @@
         </nav>
       </nav>
     </header>
-    <section id="home">home</section>
-    <section id="about">about</section>
-    <section id="work">work</section>
-    <section id="contact">contact</section>
+    <main>
+      <section id="home"><div class=section-title>home</div></section>
+      <section id="about"><div class=section-title>about</div></section>
+      <section id="work"><div class=section-title>work</div></section>
+      <section id="contact">
+        <div class=section-title>contact</div>
+        <div class="section-contents">
+        <form action="https://formspree.io/f/maykjdkw" method="post">
+          <div class="form-item">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="form-item">
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="email" />
+          </div>
+          <div class="form-item">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <div class="form-item">
+            <button type="submit">Send</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>social media links</footer>
   </body>
 </html>
