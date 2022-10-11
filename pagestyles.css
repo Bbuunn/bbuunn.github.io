@@ -1,0 +1,158 @@
+/* Bunny's She Codes Plus Portfolio Website */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,600;0,700;1,700&display=swap');
+html {
+  font-family: 'Barlow', sans-serif;
+  /* background-color: #fff; */
+  scroll-behavior: smooth;
+}
+
+:root {
+  --headerheight: 10vh;
+  }
+
+
+/* Red Border Debugger */
+/* *
+{
+  box-sizing: border-box;
+  border: 1px solid red;
+} */
+
+header {
+  width: 100vw;
+  height: var(--headerheight);
+  padding: 1rem 2rem;
+  position: fixed;
+  background-color: white;
+  opacity: 0.7;
+ /*Center Nav elements Vertically*/
+  display: flex;
+  align-items: center;
+  z-index: 999;
+ }
+
+header nav {
+  display: flex;
+  flex-wrap: nowrap;
+  font-weight: 700;
+
+}
+
+nav a
+{
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1.3rem;
+  color: black;
+  padding: 0 1rem;
+}
+
+a:hover {
+  color: orangered;
+}
+
+nav#mainnav {
+      justify-content:space-between;
+      font-weight:800;
+      flex-grow: 1;
+      padding: 0 5rem 0 0;
+}
+
+body {
+  margin: 0px;
+  min-height: 100vh;
+}
+
+section {
+  height: 100vh;
+  padding: var(--headerheight) 16rem;
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: stretch;
+  background-image: url('./images/bunhori2.JPG');
+  background-size: cover;
+  justify-content: center;
+ }
+/* Below needs media query */
+
+.row {
+display: flex;
+padding: 15px;
+margin: 10px;
+background-color: rgba(255,255,255,70%);
+border: 3px solid white;
+border-radius: 5px;
+} 
+/* 
+#row-title {
+    
+} */
+h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.project-text {
+width: 100%;
+font-size: 1.5rem;
+}
+
+#about {
+    font-size: 2rem;
+}
+
+/* Fix this */
+@media (max-width: 1024px) {
+  
+.project image {
+    flex: 30%;
+    display: inline;
+}
+    
+.project-text {
+    flex: 70%;
+    font-size: 1.5rem;
+    display: inline;
+}
+
+}
+
+@media (max-width: 768px) {
+    
+    .project image {
+        flex: 100%;
+    }
+        
+    .project-text {
+        flex: 100%;
+        font-size: 1.5rem;
+        display: block;
+    }
+      
+}
+
+@media (max-width: 480px) {
+
+    .project image {
+        width: 100%;
+        display: block;
+    }
+        
+    .project-text {
+        width: 100%;
+        font-size: 1.5rem;
+        display: block;
+    }
+}   
+
+.row img {
+    height:200px;
+    padding: 0 20px;
+}

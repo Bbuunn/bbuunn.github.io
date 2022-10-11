@@ -1,34 +1,36 @@
 /* Bunny's She Codes Plus Portfolio Website */
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,600;0,700;1,700&display=swap');
 html {
   font-family: 'Barlow', sans-serif;
   /* background-color: #fff; */
+  scroll-behavior: smooth;
 }
 
 :root {
   --headerheight: 10vh;
   }
 
-*
+
+/* Red Border Debugger */
+/* *
 {
   box-sizing: border-box;
   border: 1px solid red;
-}
+} */
 
 header {
   width: 100vw;
   height: var(--headerheight);
   padding: 1rem 2rem;
   position: fixed;
-  background-color: white; opacity: 0.7;
- 
-
-
-/*Center Nav elements Vertically*/
+  background-color: white;
+  opacity: 0.7;
+ /*Center Nav elements Vertically*/
   display: flex;
   align-items: center;
-  /* Alignment Error occurred in result */
-}
+  z-index: 999;
+ }
 
 header nav {
   display: flex;
@@ -46,6 +48,10 @@ nav a
   padding: 0 1rem;
 }
 
+a:hover {
+  color: orangered;
+}
+
 nav#mainnav {
       justify-content:space-between;
       font-weight:800;
@@ -60,7 +66,7 @@ body {
 
 section {
   height: 100vh;
-  padding: var(--headerheight) 30px 10px 30px;
+  padding: var(--headerheight) 30px;
   font-size: 80px;
   color: white;
   display: flex;
@@ -68,20 +74,37 @@ section {
  
  }
 
- section#home{
+section#home{
   background-image: url('./images/bunhori1.JPG');
   background-size: cover;
   justify-content: center;
  }
 
- section#about{
-  background-image: url('./images/bunhori3.jpg');
+section#about {
+  background-image: url('./images/bunhori5.jpg');
   background-size: cover;
  }
 
- section#work{
+section#work {
   background-image: url('./images/flower1.jpg');
   background-size: cover;
+  position: relative;
+ }
+
+ /* #section-link {
+  z-index: 999;
+ } */
+
+div#overlay {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+background-color: rgba(0,0,0,0.5);
+width: 100%;
+height: 100%;
+/* z-index: 998; */
+/* transition? */
  }
 
  section#contact{
@@ -90,12 +113,17 @@ section {
  }
 
  .section-title {
-font-weight: 500;
-font-size: 2rem;
+text-transform: uppercase;
+font-size: 4rem;
 width: 40%; 
+color: rgba(255, 255, 255, 0);
+-webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: white;
 }
 .section-contents {
-width: 80%;
+width: 60%;
+font-size: 1.5rem;
 flex-grow: 1;
 }
 
@@ -105,7 +133,7 @@ flex-grow: 1;
 }
 
 .form-item {
-  display: flex table-row;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
@@ -125,16 +153,52 @@ flex-grow: 1;
   background-color: #FFF;
   padding: 5px;
   font-size: 1rem;
+  text-transform: uppercase;
+
 }
 
-form {
-  display: table;
+.form-item button {
+  padding: 10px 20px;
+  border: 3px solid white;
+  border-radius: 5px;
+  letter-spacing: 1px;
 }
+
+.form-item button:hover {
+background-color: transparent;
+color: white;
+}
+
 label {
-  display: table-cell;
+  display:none;
 }
-input {
-  display: table-cell;
+
+@media (max-width: 1024px) {
+  div {
+      display: inline-block;
+      width: 44%;
+      font-size: 2rem;
+      background-color:#FDDC5C !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .div {
+      display:inline;
+      width: 44%;
+      font-size: 3rem;
+      background-color:#FA4224 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      display:inline;
+      width: 44%;
+      font-size: 1rem;
+      background-color:#FA4224 !important;
+  }
 }
 /* 
  form {

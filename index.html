@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Portfolio</title>
     <link rel="stylesheet" href="teststyles.css" />
+    <script src="sectionLink.js" defer></script>
   </head>
   <body>
     <header>
@@ -19,24 +20,58 @@
       </nav>
     </header>
     <main>
-      <section id="home"><div class=section-title>home</div></section>
-      <section id="about"><div class=section-title>about</div></section>
-      <section id="work"><div class=section-title>work</div></section>
+      <section id="home">
+        <div class=section-title>Hello, stranger:</div>
+        <div class="section-contents">
+          Welcome to planet 'Bunny'.
+          <br>Here, you can observe the native Bunny - a fairly tame alien creature of curiosity.
+          <br>Follow my steps closely and please watch out for the green goo.
+          <br>Thank you for travelling with us.
+        </div>
+      </section>
+      <section id="about">
+        <div class=section-title>who:</div>
+        <div class="section-contents">
+          <p>
+            Name - Bunny Ryou <br>
+            Species - Rabbittus Curiosa<br>
+            Origin - South Korea<br>
+            Current Location - Sydney, Australia<br>
+            Behaviour - commonly found coding, sign-writing or cooking
+          </p>
+          <a id="section-link" href="about.html">More Information</a>
+        <div id="overlay"></div>
+        </div>
+      </section>
+      <section id="work">
+        <div class=section-title>What:</div>
+        <div class="section-contents">
+        <p>*checks your entry ticket*<br><br>
+          Yes, you may come through!<br>
+          This exhibit displays works of Bunny.<br>
+          This may include areas of: Coding, Design & Everything else creative.          
+        <br>
+
+        </p>
+        <a id="section-link" href="work.html">Observe closer >>></a>
+        <div id="overlay"></div>
+        </div>
+      </section>
       <section id="contact">
-        <div class=section-title>contact</div>
+        <div class=section-title>Leave your message after the tone:</div>
         <div class="section-contents">
         <form action="https://formspree.io/f/maykjdkw" method="post">
           <div class="form-item">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" />
+            <input type="text" id="name" name="name" placeholder="Name"/>
           </div>
           <div class="form-item">
             <label for="mail">Email</label>
-            <input type="email" id="mail" name="email" />
+            <input type="email" id="mail" name="email" placeholder="Email"/>
           </div>
           <div class="form-item">
             <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
           </div>
           <div class="form-item">
             <button type="submit">Send</button>
