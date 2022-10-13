@@ -1,0 +1,22 @@
+
+.row{
+    color:#fff;
+		margin:2%;
+		width: 46%;
+}
+/* 
+.one{
+
+}
+
+.two{
+
+} */
+
+@media screen and (max-width: 600px) { 
+    .row{
+			float: none;
+			margin:0;
+			width: 100%;
+		}
+}

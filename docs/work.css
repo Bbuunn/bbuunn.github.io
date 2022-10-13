@@ -1,123 +1,71 @@
 /* HTML File for Bunny's Portfolio Website */
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,600;0,700;1,700&display=swap');
-html {
-  font-family: 'Barlow', sans-serif;
-  /* background-color: #fff; */
-  scroll-behavior: smooth;
-}
-
-:root {
-  --headerheight: 10vh;
-  }
-
-
 /* Red Border Debugger
 
 {
   box-sizing: border-box;
   border: 1px solid red;
 } */
-
-
-a:hover {
-  color: orangered;
-}
-
 body {
-  margin: 0px;
-  min-height: 100vh;
+  background-image: url("/images/bunhori2.JPG");
+  background-size: cover;
 }
-
 section {
-  height: 100vh;
-  padding: var(--headerheight) 16rem;
+  /* height: 100vh; */
+  padding: var(--headerheight) 12rem;
   font-size: 1rem;
   color: black;
   display: flex;
   flex-direction: column-reverse;
   align-items: stretch;
-  background-image: url('./images/bunhori2.JPG');
-  background-size: cover;
   justify-content: center;
- }
+}
 /* Below needs media query */
 
 .row {
-display: flex;
-padding: 15px;
-margin: 10px;
-background-color: rgba(255,255,255,70%);
-border: 3px solid white;
-border-radius: 5px;
-} 
-/* 
-#row-title {
-    
-} */
+  display: flex;
+  padding: 15px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 70%);
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
 h2 {
-    margin: 0;
-    font-size: 2rem;
+  margin: 0;
+  font-size: 2rem;
 }
 
 h3 {
-    margin: 0;
-    font-size: 1.5rem;
+  margin: 0;
+  font-size: 1.5rem;
 }
-.project-text {
-width: 100%;
-font-size: 1.5rem;
+.column {
+  width: 100%;
+  font-size: 1.5rem;
 }
 
 #about {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
-/* Fix this */
+/* Fix this 1024px 768px 480px*/
 @media (max-width: 1024px) {
-  
-.project image {
-    flex: 30%;
-    display: inline;
+  section {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
 }
-    
-.project-text {
-    flex: 70%;
-    font-size: 1.5rem;
-    display: inline;
-}
-
-}
-
-@media (max-width: 768px) {
-    
-    .project image {
-        flex: 100%;
-    }
-        
-    .project-text {
-        flex: 100%;
-        font-size: 1.5rem;
-        display: block;
-    }
-      
+@media (max-width: 850px) {
+  section {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
 }
 
 @media (max-width: 480px) {
-
-    .project image {
-        width: 100%;
-        display: block;
-    }
-        
-    .project-text {
-        width: 100%;
-        font-size: 1.5rem;
-        display: block;
-    }
-}   
-
-.row img {
-    height:200px;
-    padding: 0 20px;
+  section {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 }
