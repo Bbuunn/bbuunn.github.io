@@ -19,35 +19,6 @@ html {
   border: 1px solid red;
 } */
 
-header {
-  width: 100vw;
-  height: var(--headerheight);
-  padding: 1rem 2rem;
-  position: fixed;
-  background-color: white;
-  opacity: 0.7;
- /*Center Nav elements Vertically*/
-  display: flex;
-  align-items: center;
-  z-index: 999;
- }
-
-header nav {
-  display: flex;
-  flex-wrap: nowrap;
-  font-weight: 700;
-
-}
-
-nav a
-{
-  display: flex;
-  flex-wrap: nowrap;
-  font-size: 1.3rem;
-  color: black;
-  padding: 0 1rem;
-}
-
 a:hover {
   color: orangered;
 }
