@@ -1,7 +1,6 @@
 /* HTML File for Bunny's Portfolio Website */
 
 /* Red Border Debugger
-
 {
   box-sizing: border-box;
   border: 1px solid red;
@@ -12,7 +11,6 @@ body {
   background-size: cover;
 }
 section {
-  /* height: 100vh; */
   padding: var(--headerheight) 12rem;
   font-size: 1rem;
   color: black;
@@ -21,7 +19,6 @@ section {
   align-items: stretch;
   justify-content: center;
 }
-/* Below needs media query */
 
 .row {
   display: flex;
@@ -41,6 +38,7 @@ h3 {
   margin: 0;
   font-size: 1.5rem;
 }
+
 .column {
   width: 100%;
   font-size: 1.5rem;
@@ -50,7 +48,7 @@ h3 {
   font-size: 2rem;
 }
 
-/* Fix this 1024px 768px 480px*/
+/* Break points: 1024px 768px 480px*/
 @media (max-width: 1024px) {
   section {
     padding-right: 8rem;

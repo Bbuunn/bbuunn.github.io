@@ -67,6 +67,7 @@ section#contact {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
+
 .section-contents {
   width: 60%;
   font-size: 1.5rem;
@@ -127,7 +128,7 @@ label {
 @media (max-width: 850px) {
   section {
     flex-direction: column;
-    padding: 300px 10px 150px 10px;
+    padding: 220px 10px 150px 10px;
     row-gap: 20px;
   }
   .section-title {
