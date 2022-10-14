@@ -19,7 +19,6 @@ section {
 section#home {
   background-image: url("/images/bunhori1.JPG");
   background-size: cover;
-  justify-content: center;
 }
 
 section#about {
@@ -120,28 +119,50 @@ label {
 }
 
 @media (max-width: 1024px) {
-  div {
-    display: inline-block;
-    width: 44%;
-    font-size: 2rem;
-    background-color: #fddc5c !important;
+  .section-title {
+    font-size: 3rem;
   }
 }
 
-@media (max-width: 768px) {
-  .div {
-    display: inline;
-    width: 44%;
-    font-size: 3rem;
-    background-color: #fa4224 !important;
+@media (max-width: 850px) {
+  section {
+    flex-direction: column;
+    padding: 300px 10px 150px 10px;
+    row-gap: 20px;
+  }
+  .section-title {
+    font-size: 2.5rem;
+    justify-content: center;
+  }
+  .section-contents {
+    width: 60%;
+    font-size: 1.5rem;
+  }
+  .form-item input,
+  .form-item textarea {
+    width: 100%;
+  }
+  #section-contact-title {
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  body {
-    display: inline;
-    width: 44%;
-    font-size: 1rem;
-    background-color: #fa4224 !important;
+  section {
+    row-gap: 10px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .section-contents {
+    width: 80%;
+    font-size: 1.3rem;
+  }
+  .form-item input,
+  .form-item textarea {
+    width: 80%;
+  }
+  #section-contact-title {
+    font-size: 1.5rem;
   }
 }
