@@ -47,6 +47,7 @@ nav#mainnav {
   font-weight: 800;
   flex-grow: 1;
   padding: 0 5rem 0 0;
+  white-space: nowrap;
 }
 
 nav a {
@@ -68,4 +69,11 @@ nav#mainnav {
   nav a {
     font-size: 1rem;
   }
+}
+
+footer {
+  padding: 20px 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
 }
