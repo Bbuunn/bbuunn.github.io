@@ -8,12 +8,13 @@
 } */
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   padding: var(--headerheight) 30px;
   font-size: 80px;
   color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 section a {
@@ -63,12 +64,8 @@ section#contact {
   font-size: 4rem;
   width: 40%;
   color: rgba(255, 255, 255, 0);
-  -webkit-text-fill-color: rgba(
-    255,
-    255,
-    255,
-    0
-  ); /* Will override color (regardless of order) */
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
@@ -76,7 +73,7 @@ section#contact {
 .section-contents {
   width: 60%;
   font-size: 1.5rem;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 form {
@@ -94,7 +91,7 @@ form {
 }
 .form-item input,
 .form-item textarea {
-  flex-basis: 50%;
+  flex-basis: 70%;
   border: 2px solid white;
 }
 
@@ -133,7 +130,7 @@ label {
 @media (max-width: 850px) {
   section {
     flex-direction: column;
-    padding: 100px 10px 150px 10px;
+    /* padding: 140px 10px 150px 10px; */
     row-gap: 20px;
   }
   .section-title {
@@ -153,12 +150,12 @@ label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) and (orientation: portrait) {
   nav a {
     padding: 0 10px;
   }
   section {
-    padding: 60px 10px;
+    /* padding: 140px 10px 100px 10px; */
     row-gap: 7px;
   }
   .section-title {
@@ -177,5 +174,19 @@ label {
   }
   .form-item button {
     padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) and (orientation: landscape) {
+  section {
+    /* padding: 70px 10px 70px 10px; */
+    row-gap: 7px;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .section-contents {
+    width: 90%;
+    font-size: 1.3rem;
   }
 }
