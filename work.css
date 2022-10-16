@@ -25,6 +25,7 @@ section a {
   border: 2px solid black;
   color: black;
   padding: 0 10px 2px 10px;
+  white-space: nowrap;
 }
 
 .row {
