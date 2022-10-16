@@ -60,14 +60,14 @@ img {
   #three,
   #four {
     padding: 40px;
-    margin: 30px;
+    margin: 20px;
   }
 }
 
 @media (max-width: 850px) {
   section {
-    padding-right: 3.5rem;
-    padding-left: 3.5rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
     font-size: 1.2rem;
   }
   h2 {
@@ -81,13 +81,19 @@ img {
     margin: 10px auto;
     width: 130px;
   }
+
+  #three,
+  #four {
+    padding: 20px 20px;
+    margin: 20px 10px;
+  }
 }
 
 @media (max-width: 480px) {
   section {
     padding-right: 2rem;
     padding-left: 2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   img {
@@ -98,7 +104,12 @@ img {
     font-size: 1.2rem;
   }
   h3 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.6;
+  }
+  #three,
+  #four {
+    padding: 20px 20px;
+    margin: 20px 10px;
   }
 }
