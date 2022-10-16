@@ -19,8 +19,21 @@ body {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   color: orangered;
+}
+
+section a {
+  border: 2px solid white;
+  padding: 0 10px 2px 10px;
+}
+
+section a:hover {
+  border: 2px solid orangered;
 }
 
 header {
@@ -65,15 +78,18 @@ nav#mainnav {
   padding: 0 5rem 0 0;
 }
 
-@media (max-width: 480px) {
-  nav a {
-    font-size: 1rem;
-  }
-}
-
 footer {
   padding: 20px 20px;
   text-align: center;
   background-color: black;
   color: white;
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 1rem;
+  }
+  header {
+    padding-left: 0;
+  }
 }

@@ -16,6 +16,11 @@ section {
   align-items: center;
 }
 
+section a {
+  color: white;
+  text-decoration: wavy;
+}
+
 section#home {
   background-image: url("/images/bunhori1.jpg");
   background-size: cover;
@@ -121,7 +126,7 @@ label {
 
 @media (max-width: 1024px) {
   .section-title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -144,7 +149,7 @@ label {
     width: 100%;
   }
   #section-contact-title {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -164,6 +169,6 @@ label {
     width: 80%;
   }
   #section-contact-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
