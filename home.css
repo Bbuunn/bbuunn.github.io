@@ -18,7 +18,6 @@ section {
 
 section a {
   color: white;
-  text-decoration: wavy;
 }
 
 section#home {
@@ -37,7 +36,8 @@ section#work {
   position: relative;
 }
 
-/* #section-link {
+/* For JS
+#section-link {
   z-index: 999;
  } */
 
@@ -133,42 +133,49 @@ label {
 @media (max-width: 850px) {
   section {
     flex-direction: column;
-    padding: 220px 10px 150px 10px;
+    padding: 100px 10px 150px 10px;
     row-gap: 20px;
   }
   .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     justify-content: center;
   }
   .section-contents {
-    width: 60%;
-    font-size: 1.5rem;
+    width: 70%;
+    font-size: 1.2rem;
   }
   .form-item input,
   .form-item textarea {
     width: 100%;
   }
-  #section-contact-title {
-    font-size: 1rem;
+  #contact-section-title {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
+  nav a {
+    padding: 0 10px;
+  }
   section {
-    row-gap: 10px;
+    padding: 60px 10px;
+    row-gap: 7px;
   }
   .section-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .section-contents {
-    width: 80%;
+    width: 90%;
     font-size: 1.3rem;
   }
   .form-item input,
   .form-item textarea {
-    width: 80%;
+    width: 90%;
   }
-  #section-contact-title {
-    font-size: 1rem;
+  #contact-section-title {
+    font-size: 1.2rem;
+  }
+  .form-item button {
+    padding: 5px 10px;
   }
 }

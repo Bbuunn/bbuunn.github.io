@@ -36,16 +36,13 @@ h2 {
 
 h3 {
   margin: 0;
+  margin-bottom: 5px;
   font-size: 1.5rem;
 }
 
 .column {
   width: 100%;
   font-size: 1.5rem;
-}
-
-#about {
-  font-size: 2rem;
 }
 
 /* Break points: 1024px 768px 480px*/
@@ -60,11 +57,25 @@ h3 {
     padding-right: 5rem;
     padding-left: 5rem;
   }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .column {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
   section {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+  h2 {
+    font-size: 1rem;
   }
 }
